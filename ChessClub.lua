@@ -68,10 +68,7 @@ function BestMove(engine)
 		if success and res and res.Success then
 			local data = HttpService:JSONDecode(res.Body)
 
-			for _,v in pairs(data) do print(i,v) end
-			print(data.eval)
-			print(data)
-		
+			
 			return data.from, data.to
 
 			
